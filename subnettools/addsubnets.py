@@ -6,6 +6,8 @@ import sys
 """
 This script calculates a supernet prefix sufficient to contain a supplied list of subnet prefixes.
 This accounts for growth in the network, setting a default growth to 40%.
+Example invocation:  python .\addsubnets.py /24 /24 /23 /22
+Output: /20
 Author: Jodie Cunningham
 Date: October 19, 2023
 """
