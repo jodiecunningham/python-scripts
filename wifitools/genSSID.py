@@ -7,7 +7,7 @@ import string
 # Default length parameter is 16 characters, maximum is 32 per the IEEE 802.11 spec
 
 def genSSID(length=16):
-    disallowed_chars = set('?"$[\\]+')
+    disallowed_chars = set('?^"$[\\]+')
     allowed_chars = ''.join(c for c in string.printable[:-6] if c not in disallowed_chars)
     return ''.join(random.choice(allowed_chars) for i in range(length))
 
