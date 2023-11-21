@@ -4,7 +4,7 @@ import string
 
 # Generate a random string for SSID that meets the following constraints:  
 # The printable characters plus the space (ASCII 0x20) are allowed, but these six characters are not: ?, ", $, [, \, ], and +
-# Default length parameter is 16 characters, maximum is 32 per the IEEE 802.11 spec
+# Default length parameter is 16 characters, maximum is 32
 
 def genSSID(length=16):
     disallowed_chars = set('?^"$[\\]+')
